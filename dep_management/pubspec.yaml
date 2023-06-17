@@ -1,5 +1,5 @@
-name: flutter_playground_lab
-description: Flutter Showcase Collection,  Sample Code and Component wise Code.
+name: dep_management
+description: Dependency Manager. Manage dependency from single place.
 publish_to: 'none'
 
 
@@ -11,8 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dep_management:
-    path: dep_management
+  cupertino_icons: ^1.0.5
+  font_awesome_flutter: ^10.4.0
+
 
 dev_dependencies:
   flutter_test:
