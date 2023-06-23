@@ -7,9 +7,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: const Text("Flutter Playground"),
           centerTitle: true,
         ),
@@ -23,7 +21,7 @@ class HomeScreen extends StatelessWidget {
             Row(
               children: [
                 ComponentButton(
-                    flex: 80,
+                    flex: 100,
                     title: "Layouts",
                     icon: FontAwesomeIcons.table,
                     onTap: (){
