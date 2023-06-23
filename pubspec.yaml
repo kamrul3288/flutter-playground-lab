@@ -16,6 +16,8 @@ dependencies:
     path: dep_management
   common:
     path: common
+  layout_example:
+    path: layout-example
 
 dev_dependencies:
   flutter_test:
