@@ -1,6 +1,7 @@
 import 'package:common/widget/component_button.dart';
 import 'package:flutter/material.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
+import 'package:layout_example/layout_main_screen.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -25,7 +26,9 @@ class HomeScreen extends StatelessWidget {
                     title: "Layouts",
                     icon: FontAwesomeIcons.table,
                     onTap: (){
-
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const LayoutMainScreen())
+                      );
                     }
                 ),
                 ComponentButton(
