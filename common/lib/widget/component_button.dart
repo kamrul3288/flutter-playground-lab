@@ -1,3 +1,4 @@
+import 'package:common/theme/app_typography.dart';
 import 'package:flutter/material.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 
@@ -30,7 +31,7 @@ class ComponentButton extends StatelessWidget {
               children: [
                 FaIcon(icon),
                 const SizedBox(height: 8,),
-                Text(title, style: const TextStyle(fontSize: 16,fontWeight: FontWeight.w500),)
+                Text(title, style: AppTypography.typography.labelLarge,)
               ],
             ),
           ),
