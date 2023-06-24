@@ -17,11 +17,11 @@ const lightGray = Color(0xffF6F6F6);
 
 
 class ThemeColors{
-  static Color get white{
+  static Color get White{
     return SchedulerBinding.instance.platformDispatcher.platformBrightness == Brightness.light ? white : black;
   }
 
-  static Color get black{
+  static Color get Black{
     return SchedulerBinding.instance.platformDispatcher.platformBrightness == Brightness.light ? black : white;
   }
 }
