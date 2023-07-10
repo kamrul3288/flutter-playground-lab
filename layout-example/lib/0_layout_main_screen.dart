@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:layout_example/2_column_screen.dart';
 import 'package:layout_example/3_row_screen.dart';
 import 'package:layout_example/1_stack_screen.dart';
+import 'package:layout_example/4_container_screen.dart';
 
 class LayoutMainScreen extends StatelessWidget {
   const LayoutMainScreen({super.key});
@@ -64,11 +65,11 @@ class LayoutMainScreen extends StatelessWidget {
               children: [
                 ComponentButton(
                     flex: 80,
-                    title: "Stack",
-                    icon: FontAwesomeIcons.boxesStacked,
+                    title: "Container",
+                    icon: FontAwesomeIcons.confluence,
                     onTap: (){
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=> const StackScreen())
+                          MaterialPageRoute(builder: (context)=> const ContainerScreen())
                       );
                     }
                 ),
