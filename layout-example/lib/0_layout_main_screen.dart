@@ -5,6 +5,7 @@ import 'package:layout_example/2_column_screen.dart';
 import 'package:layout_example/3_row_screen.dart';
 import 'package:layout_example/1_stack_screen.dart';
 import 'package:layout_example/4_container_screen.dart';
+import 'package:layout_example/5_constainedbox_screen.dart';
 
 class LayoutMainScreen extends StatelessWidget {
   const LayoutMainScreen({super.key});
@@ -75,11 +76,11 @@ class LayoutMainScreen extends StatelessWidget {
                 ),
                 ComponentButton(
                   flex: 100,
-                  title: "Column",
-                  icon: FontAwesomeIcons.tableColumns,
+                  title: "ConstrainedBox",
+                  icon: FontAwesomeIcons.accusoft,
                   onTap: (){
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context)=> const ColumnScreen())
+                        MaterialPageRoute(builder: (context)=> const ConstrainedBoxScreen())
                     );
                   },
                 ),
