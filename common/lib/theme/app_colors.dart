@@ -27,6 +27,39 @@ class ThemeColors{
 }
 
 
+class AppColors extends ThemeExtension<AppColors>{
+  final Color? white;
+  final Color? black;
+
+  const AppColors({
+    required this.white,
+    required this.black,
+  });
+
+  @override
+  AppColors copyWith({
+    Color? white,
+    Color? black
+  }) {
+    return AppColors(
+        white: white ?? this.white,
+        black: black ?? this.black
+    );
+  }
+
+  @override
+  AppColors lerp(ThemeExtension<AppColors>? other, double t) {
+    if (other is! AppColors) {
+      return this;
+    }
+    return AppColors(
+        white: Color.lerp(white, other.white, t),
+        black: Color.lerp(black, other.black, t)
+    );
+  }
+}
+AppColors colors(context) => Theme.of(context).extension<AppColors>()!;
+
 
 extension  HexColor on Color{
   static  Color fromHex(String hexColorString){
