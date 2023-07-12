@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-
 
 const Color purple80 = Color(0xFFD0BCFF);
 const Color purpleGrey80 = Color(0xFFCCC2DC);
@@ -14,17 +12,6 @@ const Color black80 = Color(0xFF252525);
 const black50 = Color(0xFF191919);
 const red = Color(0xFFB3261E);
 const lightGray = Color(0xffF6F6F6);
-
-
-class ThemeColors{
-  static Color get White{
-    return SchedulerBinding.instance.platformDispatcher.platformBrightness == Brightness.light ? white : black;
-  }
-
-  static Color get Black{
-    return SchedulerBinding.instance.platformDispatcher.platformBrightness == Brightness.light ? black : white;
-  }
-}
 
 
 class AppColors extends ThemeExtension<AppColors>{

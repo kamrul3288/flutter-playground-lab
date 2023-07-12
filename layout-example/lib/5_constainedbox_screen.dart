@@ -13,7 +13,7 @@ class ConstrainedBoxScreen extends StatelessWidget {
         title: const Text("ConstrainedBox"),
         centerTitle: true,
       ),
-      backgroundColor: ThemeColors.White,
+      backgroundColor: colors(context).white,
 
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

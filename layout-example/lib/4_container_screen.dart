@@ -12,7 +12,7 @@ class ContainerScreen extends StatelessWidget {
         title: const Text("Container"),
         centerTitle: true,
       ),
-      backgroundColor: ThemeColors.White,
+      backgroundColor: colors(context).white,
       
       body: Padding(
         padding: const EdgeInsets.all(16.0),
