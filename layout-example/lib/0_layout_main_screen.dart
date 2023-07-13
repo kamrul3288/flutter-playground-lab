@@ -6,6 +6,7 @@ import 'package:layout_example/3_row_screen.dart';
 import 'package:layout_example/1_stack_screen.dart';
 import 'package:layout_example/4_container_screen.dart';
 import 'package:layout_example/5_constainedbox_screen.dart';
+import 'package:layout_example/6_aspectratio_screen.dart';
 
 class LayoutMainScreen extends StatelessWidget {
   const LayoutMainScreen({super.key});
@@ -87,11 +88,11 @@ class LayoutMainScreen extends StatelessWidget {
 
                 ComponentButton(
                   flex: 80,
-                  title: "Row",
-                  icon: FontAwesomeIcons.tableColumns,
+                  title: "Aspect Ratio",
+                  icon: FontAwesomeIcons.asterisk,
                   onTap: (){
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context)=> const RowScreen())
+                        MaterialPageRoute(builder: (context)=> const AspectRatioScreen())
                     );
                   },
                 ),
