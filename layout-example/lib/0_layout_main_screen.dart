@@ -7,6 +7,7 @@ import 'package:layout_example/1_stack_screen.dart';
 import 'package:layout_example/4_container_screen.dart';
 import 'package:layout_example/5_constainedbox_screen.dart';
 import 'package:layout_example/6_aspectratio_screen.dart';
+import 'package:layout_example/7_align_screen.dart';
 
 class LayoutMainScreen extends StatelessWidget {
   const LayoutMainScreen({super.key});
@@ -98,6 +99,44 @@ class LayoutMainScreen extends StatelessWidget {
                 ),
               ],
             ),
+
+
+            //-------------Row 3-----------------
+            Row(
+              children: [
+                ComponentButton(
+                    flex: 80,
+                    title: "Align",
+                    icon: FontAwesomeIcons.alignJustify,
+                    onTap: (){
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const AlignScreen())
+                      );
+                    }
+                ),
+                ComponentButton(
+                  flex: 100,
+                  title: "Center",
+                  icon: FontAwesomeIcons.alignCenter,
+                  onTap: (){
+
+                  },
+                ),
+
+                ComponentButton(
+                  flex: 80,
+                  title: "Expanded",
+                  icon: FontAwesomeIcons.expand,
+                  onTap: (){
+
+                  },
+                ),
+              ],
+            ),
+
+
+
+
           ],
         ),
       ),
