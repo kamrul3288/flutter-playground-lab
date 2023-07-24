@@ -9,6 +9,7 @@ import 'package:layout_example/5_constainedbox_screen.dart';
 import 'package:layout_example/6_aspectratio_screen.dart';
 import 'package:layout_example/7_align_screen.dart';
 import 'package:layout_example/8_center_screen.dart';
+import 'package:layout_example/9_expand_screen.dart';
 
 class LayoutMainScreen extends StatelessWidget {
   const LayoutMainScreen({super.key});
@@ -131,7 +132,9 @@ class LayoutMainScreen extends StatelessWidget {
                   title: "Expanded",
                   icon: FontAwesomeIcons.expand,
                   onTap: (){
-
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const ExpandScreen())
+                    );
                   },
                 ),
               ],
