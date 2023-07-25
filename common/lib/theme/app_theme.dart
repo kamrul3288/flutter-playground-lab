@@ -28,6 +28,10 @@ class AppTheme {
     ),
     textTheme: AppTypography.typography,
     appBarTheme: const AppBarTheme(backgroundColor: purple80),
+    dialogTheme: const DialogTheme(
+      backgroundColor: white,
+      elevation: 2
+    ),
     extensions: const <ThemeExtension<AppColors>>[
       AppColors(
           white: white,
@@ -61,6 +65,10 @@ class AppTheme {
       ),
       textTheme: AppTypography.typography,
       appBarTheme: const AppBarTheme(backgroundColor: black80),
+      dialogTheme: const DialogTheme(
+          backgroundColor: black80,
+          elevation: 2
+      ),
       extensions: const <ThemeExtension<AppColors>>[
         AppColors(
             white: black,
