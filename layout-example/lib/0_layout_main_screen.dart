@@ -182,6 +182,45 @@ class LayoutMainScreen extends StatelessWidget {
 
 
 
+            //-------------Row 4-----------------
+            Row(
+              children: [
+                ComponentButton(
+                    flex: 80,
+                    title: "Flow",
+                    icon: FontAwesomeIcons.waveSquare,
+                    onTap: (){
+                      // Navigator.of(context).push(
+                      //     MaterialPageRoute(builder: (context)=> const LimitedBoxScreen())
+                      // );
+                    }
+                ),
+                ComponentButton(
+                  flex: 80,
+                  title: "GridView",
+                  icon: FontAwesomeIcons.box,
+                  onTap: (){
+                    // Navigator.of(context).push(
+                    //     MaterialPageRoute(builder: (context)=> const FittedBoxWidgetScreen())
+                    // );
+                  },
+                ),
+
+                ComponentButton(
+                  flex: 100,
+                  title: "Indexed Stack",
+                  icon: FontAwesomeIcons.cubesStacked,
+                  onTap: (){
+                    // Navigator.of(context).push(
+                    //     MaterialPageRoute(builder: (context)=> const SizeBoxWidgetScreen())
+                    // );
+                  },
+                ),
+              ],
+            ),
+
+
+
 
           ],
         ),
