@@ -3,6 +3,7 @@ import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:layout_example/10_limitedbox_screen.dart';
 import 'package:layout_example/11_fittedbox_screen.dart';
+import 'package:layout_example/11_sizebox_screen.dart';
 import 'package:layout_example/2_column_screen.dart';
 import 'package:layout_example/3_row_screen.dart';
 import 'package:layout_example/1_stack_screen.dart';
@@ -171,7 +172,9 @@ class LayoutMainScreen extends StatelessWidget {
                   title: "SizeBox",
                   icon: FontAwesomeIcons.boxTissue,
                   onTap: (){
-
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const SizeBoxWidgetScreen())
+                    );
                   },
                 ),
               ],
