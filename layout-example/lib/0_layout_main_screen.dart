@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:layout_example/10_limitedbox_screen.dart';
 import 'package:layout_example/11_fittedbox_screen.dart';
 import 'package:layout_example/11_sizebox_screen.dart';
+import 'package:layout_example/12_flow_screen.dart';
 import 'package:layout_example/2_column_screen.dart';
 import 'package:layout_example/3_row_screen.dart';
 import 'package:layout_example/1_stack_screen.dart';
@@ -190,9 +191,9 @@ class LayoutMainScreen extends StatelessWidget {
                     title: "Flow",
                     icon: FontAwesomeIcons.waveSquare,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const LimitedBoxScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const FlowScreen())
+                      );
                     }
                 ),
                 ComponentButton(
