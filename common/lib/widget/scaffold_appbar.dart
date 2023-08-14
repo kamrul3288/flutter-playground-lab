@@ -1,5 +1,4 @@
 import 'package:common/extension/dialog_extension.dart';
-import 'package:common/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class ScaffoldAppBarWithInfoAction extends StatelessWidget {
@@ -35,7 +34,7 @@ class ScaffoldAppBarWithInfoAction extends StatelessWidget {
           )
         ],
       ),
-      backgroundColor: backgroundColor ?? colors(context).white,
+      backgroundColor: backgroundColor,
 
       body: body,
     );

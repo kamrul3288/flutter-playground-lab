@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                     }
                 ),
                 ComponentButton(
-                  flex: 80,
+                  flex: 100,
                   title: "Navigation",
                   icon: FontAwesomeIcons.squarespace,
                   onTap: (){

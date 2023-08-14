@@ -22,7 +22,7 @@ class ComponentButton extends StatelessWidget {
       flex:flex,
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-        elevation: 0.1,
+        elevation: 0,
         child: InkWell(
           onTap: onTap,
           child: Padding(
@@ -30,7 +30,7 @@ class ComponentButton extends StatelessWidget {
             child: Column(
               children: [
                 FaIcon(icon),
-                const SizedBox(height: 8,),
+                const SizedBox(height: 8),
                 Text(title, style: AppTypography.typography.labelLarge,)
               ],
             ),
