@@ -12,7 +12,7 @@ class AppTheme {
       //Color used for text and icons displayed on top of the primary color.
       onPrimary: white,
       //The secondary color could be used for tabs, headers, and other secondary UI elements.
-      secondary: purpleGrey40,
+      secondary: purpleGrey80,
       //The onSecondary color could be used for text and icons that appear on top of secondary-colored backgrounds.
       onSecondary: white,
       //The Background color could be used for backgrounds.

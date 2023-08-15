@@ -5,6 +5,7 @@ import 'package:layout_example/10_limitedbox_screen.dart';
 import 'package:layout_example/11_fittedbox_screen.dart';
 import 'package:layout_example/11_sizebox_screen.dart';
 import 'package:layout_example/12_flow_screen.dart';
+import 'package:layout_example/13_grid_screen.dart';
 import 'package:layout_example/2_column_screen.dart';
 import 'package:layout_example/3_row_screen.dart';
 import 'package:layout_example/1_stack_screen.dart';
@@ -147,6 +148,18 @@ class LayoutMainScreen extends StatelessWidget {
             //-------------Row 4-----------------
             Row(
               children: [
+
+                ComponentButton(
+                  flex: 80,
+                  title: "FittedBox",
+                  icon: FontAwesomeIcons.box,
+                  onTap: (){
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const FittedBoxWidgetScreen())
+                    );
+                  },
+                ),
+
                 ComponentButton(
                     flex: 100,
                     title: "Limited Box",
@@ -156,16 +169,6 @@ class LayoutMainScreen extends StatelessWidget {
                           MaterialPageRoute(builder: (context)=> const LimitedBoxScreen())
                       );
                     }
-                ),
-                ComponentButton(
-                  flex: 100,
-                  title: "FittedBox",
-                  icon: FontAwesomeIcons.box,
-                  onTap: (){
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context)=> const FittedBoxWidgetScreen())
-                    );
-                  },
                 ),
 
                 ComponentButton(
@@ -196,16 +199,6 @@ class LayoutMainScreen extends StatelessWidget {
                       );
                     }
                 ),
-                ComponentButton(
-                  flex: 80,
-                  title: "GridView",
-                  icon: FontAwesomeIcons.box,
-                  onTap: (){
-                    // Navigator.of(context).push(
-                    //     MaterialPageRoute(builder: (context)=> const FittedBoxWidgetScreen())
-                    // );
-                  },
-                ),
 
                 ComponentButton(
                   flex: 100,
@@ -217,12 +210,24 @@ class LayoutMainScreen extends StatelessWidget {
                     // );
                   },
                 ),
+
+                ComponentButton(
+                  flex: 80,
+                  title: "GridView",
+                  icon: FontAwesomeIcons.box,
+                  onTap: (){
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const GridViewScreen())
+                    );
+                  },
+                ),
+
+
               ],
             ),
 
 
-
-
+            
           ],
         ),
       ),
