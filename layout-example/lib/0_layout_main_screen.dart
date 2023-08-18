@@ -29,8 +29,7 @@ class LayoutMainScreen extends StatelessWidget {
       ),
 
 
-      body: SizedBox(
-        width: double.infinity,
+      body: SingleChildScrollView(
         child: Column(
           children: [
             //-------------Row 1-----------------
@@ -227,6 +226,45 @@ class LayoutMainScreen extends StatelessWidget {
               ],
             ),
 
+            //-------------Row 5-----------------
+            Row(
+              children: [
+                ComponentButton(
+                    flex: 80,
+                    title: "Wrap",
+                    icon: FontAwesomeIcons.bacon,
+                    onTap: (){
+                      // Navigator.of(context).push(
+                      //     MaterialPageRoute(builder: (context)=> const FlowScreen())
+                      // );
+                    }
+                ),
+
+                ComponentButton(
+                  flex: 100,
+                  title: "SliverAppBar",
+                  icon: FontAwesomeIcons.bars,
+                  onTap: (){
+                    // Navigator.of(context).push(
+                    //     MaterialPageRoute(builder: (context)=> const IndexedStackScreen())
+                    // );
+                  },
+                ),
+
+                ComponentButton(
+                  flex: 80,
+                  title: "ListView",
+                  icon: FontAwesomeIcons.listOl,
+                  onTap: (){
+                    // Navigator.of(context).push(
+                    //     MaterialPageRoute(builder: (context)=> const GridViewScreen())
+                    // );
+                  },
+                ),
+
+
+              ],
+            ),
 
             
           ],
