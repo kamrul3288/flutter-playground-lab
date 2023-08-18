@@ -8,7 +8,7 @@ extension AlertDialogExtension on BuildContext{
     return showDialog(
         context: this,
         builder: (BuildContext context){
-          return AlertDialog(
+          return AlertDialog.adaptive(
             content: Text(message),
             actions: [
               TextButton(
