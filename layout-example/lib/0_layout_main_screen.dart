@@ -18,6 +18,7 @@ import 'package:layout_example/6_aspectratio_screen.dart';
 import 'package:layout_example/7_align_screen.dart';
 import 'package:layout_example/8_center_screen.dart';
 import 'package:layout_example/9_expand_screen.dart';
+import 'package:layout_example/list_view_screen.dart';
 
 class LayoutMainScreen extends StatelessWidget {
   const LayoutMainScreen({super.key});
@@ -258,9 +259,9 @@ class LayoutMainScreen extends StatelessWidget {
                   title: "ListView",
                   icon: FontAwesomeIcons.listOl,
                   onTap: (){
-                    // Navigator.of(context).push(
-                    //     MaterialPageRoute(builder: (context)=> const GridViewScreen())
-                    // );
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const ListViewScreen())
+                    );
                   },
                 ),
 
