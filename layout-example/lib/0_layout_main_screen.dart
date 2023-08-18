@@ -8,6 +8,7 @@ import 'package:layout_example/12_flow_screen.dart';
 import 'package:layout_example/13_grid_screen.dart';
 import 'package:layout_example/14_indexed_stack_screen.dart';
 import 'package:layout_example/15_wrap_screen.dart';
+import 'package:layout_example/16_sliver_appbar_screen.dart';
 import 'package:layout_example/2_column_screen.dart';
 import 'package:layout_example/3_row_screen.dart';
 import 'package:layout_example/1_stack_screen.dart';
@@ -246,9 +247,9 @@ class LayoutMainScreen extends StatelessWidget {
                   title: "SliverAppBar",
                   icon: FontAwesomeIcons.bars,
                   onTap: (){
-                    // Navigator.of(context).push(
-                    //     MaterialPageRoute(builder: (context)=> const IndexedStackScreen())
-                    // );
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const SliverAppbarScreen())
+                    );
                   },
                 ),
 
