@@ -5,14 +5,14 @@ class ScaffoldAppBarWithInfoAction extends StatelessWidget {
   final Widget? body;
   final Color? backgroundColor;
   final String title;
-  final String widgetDescription;
+  final String? widgetDescription;
 
   const ScaffoldAppBarWithInfoAction({
     super.key,
     this.body,
     this.backgroundColor,
     required this.title,
-    required this.widgetDescription
+    this.widgetDescription
   });
 
   @override
@@ -27,7 +27,7 @@ class ScaffoldAppBarWithInfoAction extends StatelessWidget {
           IconButton(
               onPressed: (){
                 context.positiveButtonDialog(
-                  widgetDescription
+                    widgetDescription ?? "No Description provided"
                 );
               },
               icon: const Icon(Icons.info_outline)

@@ -2,6 +2,7 @@ import 'package:common/widget/component_button.dart';
 import 'package:flutter/material.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:layout_example/layout_main_screen.dart';
+import 'package:material_component/material_component_main.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -36,7 +37,9 @@ class HomeScreen extends StatelessWidget {
                   title: "Material Component",
                   icon: FontAwesomeIcons.squarespace,
                   onTap: (){
-
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
+                    );
                   },
                 ),
               ],
