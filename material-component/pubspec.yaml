@@ -12,9 +12,9 @@ dependencies:
     sdk: flutter
   dep_management:
     path: ../dep_management
-
   common:
     path: ../common
+
 
 dev_dependencies:
   flutter_test:

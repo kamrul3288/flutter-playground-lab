@@ -3,6 +3,7 @@ import 'package:common/widget/component_button.dart';
 import 'package:common/widget/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:material_component/text_screen.dart';
 
 class MaterialComponentMainScreen extends StatelessWidget {
   const MaterialComponentMainScreen({super.key});
@@ -24,9 +25,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                       title: "Text",
                       icon: FontAwesomeIcons.textWidth,
                       onTap: (){
-                        // Navigator.of(context).push(
-                        //     MaterialPageRoute(builder: (context)=> const LayoutMainScreen())
-                        // );
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context)=> const TextScreen())
+                        );
                       }
                   ),
                   ComponentButton(
