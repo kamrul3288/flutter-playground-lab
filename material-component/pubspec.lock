@@ -44,7 +44,7 @@ packages:
   common:
     dependency: "direct main"
     description:
-      path: common
+      path: "../common"
       relative: true
     source: path
     version: "1.0.0+1"
@@ -59,7 +59,7 @@ packages:
   dep_management:
     dependency: "direct main"
     description:
-      path: dep_management
+      path: "../dep_management"
       relative: true
     source: path
     version: "1.0.0+1"
@@ -97,13 +97,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "10.5.0"
-  layout_example:
-    dependency: "direct main"
-    description:
-      path: layout-example
-      relative: true
-    source: path
-    version: "1.0.0+1"
   lints:
     dependency: transitive
     description:
@@ -128,13 +121,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.0"
-  material_component:
-    dependency: "direct main"
-    description:
-      path: material-component
-      relative: true
-    source: path
-    version: "1.0.0+1"
   meta:
     dependency: transitive
     description:

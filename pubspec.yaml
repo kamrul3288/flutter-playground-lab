@@ -18,6 +18,8 @@ dependencies:
     path: common
   layout_example:
     path: layout-example
+  material_component:
+    path: material-component
 
 dev_dependencies:
   flutter_test:
