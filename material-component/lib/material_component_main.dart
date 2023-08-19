@@ -4,6 +4,7 @@ import 'package:common/widget/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:material_component/button_screen.dart';
+import 'package:material_component/icon_screen.dart';
 import 'package:material_component/text_screen.dart';
 
 class MaterialComponentMainScreen extends StatelessWidget {
@@ -47,9 +48,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Icons",
                     icon: FontAwesomeIcons.icons,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const IconScreen())
+                      );
                     },
                   ),
                 ],
