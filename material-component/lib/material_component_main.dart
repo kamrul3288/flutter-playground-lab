@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:material_component/button_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
+import 'package:material_component/text_field_screen.dart';
 import 'package:material_component/text_screen.dart';
 
 class MaterialComponentMainScreen extends StatelessWidget {
@@ -75,9 +76,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "TextFiled",
                     icon: FontAwesomeIcons.textSlash,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const TextFiledScreen())
+                      );
                     },
                   ),
 
