@@ -9,6 +9,7 @@ import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
 import 'package:material_component/text_field_screen.dart';
 import 'package:material_component/text_screen.dart';
+import 'package:material_component/top_appbar_screen.dart';
 
 class MaterialComponentMainScreen extends StatelessWidget {
   const MaterialComponentMainScreen({super.key});
@@ -105,9 +106,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                       title: "Top Appbar",
                       icon: FontAwesomeIcons.barsProgress,
                       onTap: (){
-                        // Navigator.of(context).push(
-                        //     MaterialPageRoute(builder: (context)=> const LayoutMainScreen())
-                        // );
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context)=> const TopAppBarScreen())
+                        );
                       }
                   ),
                   ComponentButton(
