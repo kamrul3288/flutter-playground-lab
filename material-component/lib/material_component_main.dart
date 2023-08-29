@@ -4,6 +4,7 @@ import 'package:common/widget/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:material_component/button_screen.dart';
+import 'package:material_component/card_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
 import 'package:material_component/text_field_screen.dart';
@@ -87,9 +88,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Cards",
                     icon: FontAwesomeIcons.square,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const CardScreen())
+                      );
                     },
                   ),
                 ],
