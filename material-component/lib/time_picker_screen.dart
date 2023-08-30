@@ -65,7 +65,7 @@ class _TimePickerScreenState extends State<TimePickerScreen> {
                   }
               );
             },
-            child: const Text("Show iOS Time Picker Sheet"),
+            child: const Text("iOS Time Picker Sheet"),
           ),
 
 
@@ -83,7 +83,7 @@ class _TimePickerScreenState extends State<TimePickerScreen> {
                   }
               );
             },
-            child: const Text("Show iOS Time Picker Dialog"),
+            child: const Text("iOS Time Picker Dialog"),
           ),
 
 
@@ -94,7 +94,7 @@ class _TimePickerScreenState extends State<TimePickerScreen> {
             onPressed: (){
               _androidStyleTimePicker();
             },
-            child: const Text("Show Android Time Picker Dialog"),
+            child: const Text("Android Time Picker Dialog"),
           ),
 
         ],
