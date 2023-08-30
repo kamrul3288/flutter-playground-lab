@@ -9,6 +9,7 @@ import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
 import 'package:material_component/text_field_screen.dart';
 import 'package:material_component/text_screen.dart';
+import 'package:material_component/time_picker_screen.dart';
 import 'package:material_component/top_appbar_screen.dart';
 
 class MaterialComponentMainScreen extends StatelessWidget {
@@ -116,9 +117,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Time Picker",
                     icon: FontAwesomeIcons.clock,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const TimePickerScreen())
+                      );
                     },
                   ),
 
