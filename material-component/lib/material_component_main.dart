@@ -7,6 +7,7 @@ import 'package:material_component/button_screen.dart';
 import 'package:material_component/card_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
+import 'package:material_component/tabs_screen.dart';
 import 'package:material_component/text_field_screen.dart';
 import 'package:material_component/text_screen.dart';
 import 'package:material_component/time_picker_screen.dart';
@@ -146,9 +147,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                       title: "Tabs",
                       icon: FontAwesomeIcons.tablet,
                       onTap: (){
-                        // Navigator.of(context).push(
-                        //     MaterialPageRoute(builder: (context)=> const LayoutMainScreen())
-                        // );
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context)=> const TabsScreen())
+                        );
                       }
                   ),
                   ComponentButton(
