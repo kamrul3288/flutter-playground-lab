@@ -7,6 +7,7 @@ import 'package:material_component/button_screen.dart';
 import 'package:material_component/card_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
+import 'package:material_component/snackbar_screen.dart';
 import 'package:material_component/tabs_screen.dart';
 import 'package:material_component/text_field_screen.dart';
 import 'package:material_component/text_screen.dart';
@@ -157,9 +158,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Snack Bars",
                     icon: FontAwesomeIcons.info,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const SnackBarScreen())
+                      );
                     },
                   ),
 
