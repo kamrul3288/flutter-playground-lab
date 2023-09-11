@@ -8,6 +8,7 @@ import 'package:material_component/card_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
 import 'package:material_component/snackbar_screen.dart';
+import 'package:material_component/switch_screen.dart';
 import 'package:material_component/tabs_screen.dart';
 import 'package:material_component/text_field_screen.dart';
 import 'package:material_component/text_screen.dart';
@@ -169,9 +170,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Switch",
                     icon: FontAwesomeIcons.toggleOn,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const SwitchScreen())
+                      );
                     },
                   ),
                 ],
