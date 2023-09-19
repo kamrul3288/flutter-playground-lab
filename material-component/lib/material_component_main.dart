@@ -8,6 +8,7 @@ import 'package:material_component/button_screen.dart';
 import 'package:material_component/card_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
+import 'package:material_component/search_bar_screen.dart';
 import 'package:material_component/slider_screen.dart';
 import 'package:material_component/snackbar_screen.dart';
 import 'package:material_component/switch_screen.dart';
@@ -209,9 +210,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Search",
                     icon: FontAwesomeIcons.magnifyingGlass,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const SearchBarScreen())
+                      );
                     },
                   ),
                 ],
