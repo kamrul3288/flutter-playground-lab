@@ -27,6 +27,7 @@ class AppTheme {
       onError: white,
     ),
     textTheme: AppTypography.typography,
+    textSelectionTheme: const TextSelectionThemeData(cursorColor: purple40),
     appBarTheme: const AppBarTheme(
       backgroundColor: purple40,
       foregroundColor: white
@@ -67,6 +68,7 @@ class AppTheme {
         onError: white,
       ),
       textTheme: AppTypography.typography,
+      textSelectionTheme: const TextSelectionThemeData(cursorColor: white),
       appBarTheme: const AppBarTheme(
           backgroundColor: black80,
           foregroundColor: white
