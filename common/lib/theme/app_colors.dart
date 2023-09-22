@@ -17,20 +17,24 @@ const lightGray = Color(0xffF6F6F6);
 class AppColors extends ThemeExtension<AppColors>{
   final Color? white;
   final Color? black;
+  final Color? progressbarBackground;
 
   const AppColors({
     required this.white,
     required this.black,
+    required this.progressbarBackground,
   });
 
   @override
   AppColors copyWith({
     Color? white,
-    Color? black
+    Color? black,
+    Color? progressbarBackground,
   }) {
     return AppColors(
-        white: white ?? this.white,
-        black: black ?? this.black
+      white: white ?? this.white,
+      black: black ?? this.black,
+      progressbarBackground: progressbarBackground ?? this.progressbarBackground,
     );
   }
 
@@ -40,8 +44,9 @@ class AppColors extends ThemeExtension<AppColors>{
       return this;
     }
     return AppColors(
-        white: Color.lerp(white, other.white, t),
-        black: Color.lerp(black, other.black, t)
+      white: Color.lerp(white, other.white, t),
+      black: Color.lerp(black, other.black, t),
+      progressbarBackground: Color.lerp(progressbarBackground, other.progressbarBackground, t),
     );
   }
 }

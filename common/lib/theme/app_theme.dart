@@ -36,10 +36,11 @@ class AppTheme {
       backgroundColor: white,
       elevation: 2
     ),
-    extensions: const <ThemeExtension<AppColors>>[
+    extensions:  <ThemeExtension<AppColors>>[
       AppColors(
-          white: white,
-          black: black
+        white: white,
+        black: black,
+        progressbarBackground: Colors.grey.withOpacity(0.3),
       )
     ]
   );
@@ -79,8 +80,9 @@ class AppTheme {
       ),
       extensions: const <ThemeExtension<AppColors>>[
         AppColors(
-            white: black,
-            black: white
+          white: black,
+          black: white,
+          progressbarBackground: white,
         )
       ]
   );

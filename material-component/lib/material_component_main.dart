@@ -8,6 +8,7 @@ import 'package:material_component/button_screen.dart';
 import 'package:material_component/card_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
+import 'package:material_component/progressbar_screen.dart';
 import 'package:material_component/radio_button_screen.dart';
 import 'package:material_component/search_bar_screen.dart';
 import 'package:material_component/slider_screen.dart';
@@ -237,9 +238,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Progress bar",
                     icon: FontAwesomeIcons.spinner,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const ProgressbarScreen())
+                      );
                     },
                   ),
 
