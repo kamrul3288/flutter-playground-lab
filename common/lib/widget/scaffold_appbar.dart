@@ -48,11 +48,14 @@ class ScaffoldDrawerAppbar extends StatelessWidget {
   final Color? backgroundColor;
   final Widget? title;
   final Widget drawer;
+  final IconData? drawerIcon;
+
   const ScaffoldDrawerAppbar({
     super.key,
     this.body,
     this.backgroundColor,
     this.title,
+    this.drawerIcon,
     required this.drawer,
   });
 
@@ -62,6 +65,16 @@ class ScaffoldDrawerAppbar extends StatelessWidget {
       backgroundColor: backgroundColor,
       appBar: AppBar(
         title: title,
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              icon: Icon(drawerIcon ?? Icons.menu),
+              onPressed: (){
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          }
+        ),
       ),
       drawer: drawer,
       body: body,
