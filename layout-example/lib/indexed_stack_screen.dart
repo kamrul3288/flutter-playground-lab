@@ -20,7 +20,7 @@ class _IndexedStackScreenState extends State<IndexedStackScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  ScaffoldAppBarWithInfoAction(
+    return  ScaffoldInfoActionAppBar(
       title: "IndexedStack",
       widgetDescription: "IndexedStack is a subclass of Stack. You can determine which child widget to be shown through the index property. Assuming the index is null, child widgets will be shown. To use IndexedStack, we can simply wrap the list of widgets inside the IndexedStack widget.",
 

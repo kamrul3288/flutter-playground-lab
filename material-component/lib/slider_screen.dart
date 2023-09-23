@@ -19,7 +19,7 @@ class _SliderScreenState extends State<SliderScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  ScaffoldAppBarWithInfoAction(
+    return  ScaffoldInfoActionAppBar(
       title: "Slider",
 
       body: Padding(

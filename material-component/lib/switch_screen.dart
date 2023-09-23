@@ -21,7 +21,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Switch",
 
       body: Padding(

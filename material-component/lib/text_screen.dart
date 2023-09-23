@@ -10,7 +10,7 @@ class TextScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Text",
       body: Padding(
         padding: const EdgeInsets.all(16.0),

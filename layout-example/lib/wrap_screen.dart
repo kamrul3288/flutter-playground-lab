@@ -9,7 +9,7 @@ class WrapScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Wrap",
       widgetDescription: "A widget that displays its children in multiple horizontal or vertical runs.",
       body: SafeArea(

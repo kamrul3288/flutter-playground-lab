@@ -6,7 +6,7 @@ class IconScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  ScaffoldAppBarWithInfoAction(
+    return  ScaffoldInfoActionAppBar(
       title: "Icon",
       body: Padding(
         padding: const EdgeInsets.all(16.0),

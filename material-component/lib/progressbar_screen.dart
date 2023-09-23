@@ -13,7 +13,7 @@ class ProgressbarScreen extends StatefulWidget {
 class _ProgressbarScreenState extends State<ProgressbarScreen> {
   @override
   Widget build(BuildContext context) {
-    return  ScaffoldAppBarWithInfoAction(
+    return  ScaffoldInfoActionAppBar(
       title: "Progressbar",
       body: Padding(
         padding: const EdgeInsets.all(16.0),

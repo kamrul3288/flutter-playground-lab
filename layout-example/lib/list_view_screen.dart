@@ -7,7 +7,7 @@ class ListViewScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  ScaffoldAppBarWithInfoAction(
+    return  ScaffoldInfoActionAppBar(
       title: "ListView",
       widgetDescription: "A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. ",
       body: ListView.builder(

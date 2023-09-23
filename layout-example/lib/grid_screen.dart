@@ -44,7 +44,7 @@ class _GridViewScreenState extends State<GridViewScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  ScaffoldAppBarWithInfoAction(
+    return  ScaffoldInfoActionAppBar(
       title: "Grid View",
       widgetDescription: "GridView is a widget in Flutter that displays the items in a 2-D array (two-dimensional rows and columns). As the name suggests, it will be used when we want to show items in a Grid. We can select the desired item from the grid list by tapping on them.",
       body: SafeArea(

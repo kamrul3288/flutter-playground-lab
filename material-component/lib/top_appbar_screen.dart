@@ -20,7 +20,7 @@ class TopAppBarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Appbar",
       body: SafeArea(
         child: Padding(

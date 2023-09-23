@@ -31,7 +31,7 @@ class _TextFiledScreenState extends State<TextFiledScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return   ScaffoldAppBarWithInfoAction(
+    return   ScaffoldInfoActionAppBar(
       title: "Text Filed",
       body: SafeArea(
         child: SingleChildScrollView(

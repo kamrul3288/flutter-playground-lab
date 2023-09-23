@@ -8,7 +8,7 @@ class FittedBoxWidgetScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
         title: "FittedBox Widget",
         widgetDescription: "FittedBox Widget is a basic Widget to help in making a snappy and neater approach to contain a child inside a parent. The fundamental purpose behind utilizing the FittedBox is to make the App UI look neater for dynamic children with shifting lengths.",
         body: Container(

@@ -9,7 +9,7 @@ class SizeBoxWidgetScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
 
       title: "SizeBox Widget",
       widgetDescription: "SizedBox is a built-in widget in flutter SDK.  It is a simple box with a specified size. It can be used to set size constraints to the child widget, put an empty SizedBox between the two widgets to get some space in between, or something else.",

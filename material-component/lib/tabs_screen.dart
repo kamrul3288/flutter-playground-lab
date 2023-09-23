@@ -22,7 +22,7 @@ class _TabsScreenState extends State<TabsScreen>
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
         title: "Tabs",
         body: Column(
           children: [

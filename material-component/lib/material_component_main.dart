@@ -26,7 +26,7 @@ class MaterialComponentMainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Material Component",
       body: SafeArea(
         child: SingleChildScrollView(

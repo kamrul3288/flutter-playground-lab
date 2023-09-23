@@ -7,7 +7,7 @@ class FlowScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ScaffoldAppBarWithInfoAction(
+    return const ScaffoldInfoActionAppBar(
         title: "Flow Widget",
         widgetDescription: "The Flow widget in Flutter is a layout widget that positions children's elements in a flow along with sizing and positions its children proficiently using FlowDelegate",
         body: FlowMenu(),

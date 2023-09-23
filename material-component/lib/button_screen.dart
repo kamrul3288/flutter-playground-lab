@@ -7,7 +7,7 @@ class ButtonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Button",
       body: Padding(
         padding: const EdgeInsets.all(16),

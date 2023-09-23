@@ -45,7 +45,7 @@ class _TimePickerScreenState extends State<TimePickerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Time Picker",
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

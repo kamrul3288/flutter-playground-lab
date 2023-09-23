@@ -18,7 +18,7 @@ class _RadioButtonScreenState extends State<RadioButtonScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return ScaffoldAppBarWithInfoAction(
+    return ScaffoldInfoActionAppBar(
       title: "Radio Button",
       body: Padding(
         padding: const EdgeInsets.all(16.0),

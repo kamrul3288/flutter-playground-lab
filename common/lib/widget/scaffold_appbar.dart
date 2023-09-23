@@ -1,13 +1,14 @@
 import 'package:common/extension/dialog_extension.dart';
 import 'package:flutter/material.dart';
 
-class ScaffoldAppBarWithInfoAction extends StatelessWidget {
+//-------------Scaffold appbar with info action bar-------------------
+class ScaffoldInfoActionAppBar extends StatelessWidget {
   final Widget? body;
   final Color? backgroundColor;
   final String title;
   final String? widgetDescription;
 
-  const ScaffoldAppBarWithInfoAction({
+  const ScaffoldInfoActionAppBar({
     super.key,
     this.body,
     this.backgroundColor,
@@ -36,6 +37,33 @@ class ScaffoldAppBarWithInfoAction extends StatelessWidget {
       ),
       backgroundColor: backgroundColor,
 
+      body: body,
+    );
+  }
+}
+
+//-------------------Scaffold appbar with nav drawer ------------
+class ScaffoldDrawerAppbar extends StatelessWidget {
+  final Widget? body;
+  final Color? backgroundColor;
+  final Widget? title;
+  final Widget drawer;
+  const ScaffoldDrawerAppbar({
+    super.key,
+    this.body,
+    this.backgroundColor,
+    this.title,
+    required this.drawer,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: backgroundColor,
+      appBar: AppBar(
+        title: title,
+      ),
+      drawer: drawer,
       body: body,
     );
   }
