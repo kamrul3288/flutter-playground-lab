@@ -42,6 +42,38 @@ class ScaffoldInfoActionAppBar extends StatelessWidget {
   }
 }
 
+
+//-------------Scaffold appbar with  action bar-------------------
+class ScaffoldActionAppBar extends StatelessWidget {
+  final Widget? body;
+  final Color? backgroundColor;
+  final String title;
+  final List<Widget>? actions;
+
+  const ScaffoldActionAppBar({
+    super.key,
+    this.body,
+    this.backgroundColor,
+    required this.title,
+    this.actions
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+        centerTitle: true,
+        actions: actions
+      ),
+      backgroundColor: backgroundColor,
+
+      body: body,
+    );
+  }
+}
+
+
 //-------------------Scaffold appbar with nav drawer ------------
 class ScaffoldDrawerAppbar extends StatelessWidget {
   final Widget? body;

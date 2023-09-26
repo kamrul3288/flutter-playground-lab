@@ -9,6 +9,7 @@ import 'package:material_component/card_screen.dart';
 import 'package:material_component/icon_screen.dart';
 import 'package:material_component/image_screen.dart';
 import 'package:material_component/nav_drawer_screen.dart';
+import 'package:material_component/popup_menu_screen.dart';
 import 'package:material_component/progressbar_screen.dart';
 import 'package:material_component/radio_button_screen.dart';
 import 'package:material_component/search_bar_screen.dart';
@@ -266,9 +267,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                       title: "Popup Menu",
                       icon: FontAwesomeIcons.dyalog,
                       onTap: (){
-                        // Navigator.of(context).push(
-                        //     MaterialPageRoute(builder: (context)=> const LayoutMainScreen())
-                        // );
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context)=> const PopupMenuScreen())
+                        );
                       }
                   ),
                   ComponentButton(
