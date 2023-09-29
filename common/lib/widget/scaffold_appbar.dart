@@ -113,3 +113,32 @@ class ScaffoldDrawerAppbar extends StatelessWidget {
     );
   }
 }
+
+
+//-------------------Scaffold appbar with bottom navigation ------------
+class ScaffoldBottomNavigationAppbar extends StatelessWidget {
+  final Widget? body;
+  final Color? backgroundColor;
+  final Widget? title;
+  final Widget bottomNavigationBar;
+
+  const ScaffoldBottomNavigationAppbar({
+    super.key,
+    this.body,
+    this.backgroundColor,
+    this.title,
+    required this.bottomNavigationBar,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: backgroundColor,
+      appBar: AppBar(
+        title: title,
+      ),
+      bottomNavigationBar: bottomNavigationBar,
+      body: body,
+    );
+  }
+}
