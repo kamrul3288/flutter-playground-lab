@@ -36,6 +36,7 @@ class AppTheme {
       backgroundColor: white,
       elevation: 2
     ),
+
     extensions:  <ThemeExtension<AppColors>>[
       AppColors(
         white: white,
@@ -77,6 +78,16 @@ class AppTheme {
       dialogTheme: const DialogTheme(
           backgroundColor: black80,
           elevation: 2
+      ),
+      datePickerTheme:  DatePickerThemeData(
+        dayBackgroundColor: MaterialStateProperty.resolveWith((states){
+          return states.contains(MaterialState.selected) ? purple40 : Colors.transparent;
+        }),
+        todayBorder: const BorderSide(color: purple40),
+        todayBackgroundColor: MaterialStateProperty.resolveWith((states){
+          return states.contains(MaterialState.selected) ? purple40 : Colors.transparent;
+        }),
+        todayForegroundColor: const MaterialStatePropertyAll(white),
       ),
       extensions: const <ThemeExtension<AppColors>>[
         AppColors(
