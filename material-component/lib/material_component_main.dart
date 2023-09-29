@@ -3,6 +3,7 @@ import 'package:common/widget/component_button.dart';
 import 'package:common/widget/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:material_component/DividerScreen.dart';
 import 'package:material_component/bottom_nvaigation_screen.dart';
 import 'package:material_component/bottom_sheet_screen.dart';
 import 'package:material_component/button_screen.dart';
@@ -289,9 +290,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Divider",
                     icon: FontAwesomeIcons.divide,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const DividerScreen())
+                      );
                     },
                   ),
                 ],
