@@ -36,7 +36,11 @@ class AppTheme {
       backgroundColor: white,
       elevation: 2
     ),
-
+    chipTheme: const ChipThemeData(
+      side: BorderSide(color: purple40),
+      selectedColor: purple40,
+      checkmarkColor: white
+    ),
     extensions:  <ThemeExtension<AppColors>>[
       AppColors(
         white: white,
@@ -88,6 +92,9 @@ class AppTheme {
           return states.contains(MaterialState.selected) ? purple40 : Colors.transparent;
         }),
         todayForegroundColor: const MaterialStatePropertyAll(white),
+      ),
+      chipTheme: const ChipThemeData(
+        selectedColor: black80
       ),
       extensions: const <ThemeExtension<AppColors>>[
         AppColors(

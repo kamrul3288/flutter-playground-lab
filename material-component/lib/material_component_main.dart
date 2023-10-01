@@ -8,6 +8,7 @@ import 'package:material_component/bottom_nvaigation_screen.dart';
 import 'package:material_component/bottom_sheet_screen.dart';
 import 'package:material_component/button_screen.dart';
 import 'package:material_component/card_screen.dart';
+import 'package:material_component/chips_screen.dart';
 import 'package:material_component/date_picker_screen.dart';
 import 'package:material_component/dialog_screen.dart';
 import 'package:material_component/icon_screen.dart';
@@ -329,9 +330,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Chips",
                     icon: FontAwesomeIcons.filter,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const ChipsScreen())
+                      );
                     },
                   ),
                 ],
