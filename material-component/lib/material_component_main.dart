@@ -8,6 +8,7 @@ import 'package:material_component/bottom_nvaigation_screen.dart';
 import 'package:material_component/bottom_sheet_screen.dart';
 import 'package:material_component/button_screen.dart';
 import 'package:material_component/card_screen.dart';
+import 'package:material_component/checkbox_screen.dart';
 import 'package:material_component/chips_screen.dart';
 import 'package:material_component/date_picker_screen.dart';
 import 'package:material_component/dialog_screen.dart';
@@ -347,9 +348,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                       title: "Checkbox",
                       icon: FontAwesomeIcons.squareCheck,
                       onTap: (){
-                        // Navigator.of(context).push(
-                        //     MaterialPageRoute(builder: (context)=> const LayoutMainScreen())
-                        // );
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context)=> const CheckBoxScreen())
+                        );
                       }
                   ),
                   ComponentButton(
