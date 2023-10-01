@@ -121,6 +121,8 @@ class ScaffoldBottomNavigationAppbar extends StatelessWidget {
   final Color? backgroundColor;
   final Widget? title;
   final Widget bottomNavigationBar;
+  final Widget? floatingActionButton;
+  final FloatingActionButtonLocation? floatingActionButtonLocation;
 
   const ScaffoldBottomNavigationAppbar({
     super.key,
@@ -128,6 +130,8 @@ class ScaffoldBottomNavigationAppbar extends StatelessWidget {
     this.backgroundColor,
     this.title,
     required this.bottomNavigationBar,
+    this.floatingActionButton,
+    this.floatingActionButtonLocation,
   });
 
   @override
@@ -138,7 +142,11 @@ class ScaffoldBottomNavigationAppbar extends StatelessWidget {
         title: title,
       ),
       bottomNavigationBar: bottomNavigationBar,
+      floatingActionButton: floatingActionButton,
+      floatingActionButtonLocation: floatingActionButtonLocation,
       body: body,
     );
   }
 }
+
+
