@@ -4,6 +4,7 @@ import 'package:common/widget/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:material_component/DividerScreen.dart';
+import 'package:material_component/badge_screen.dart';
 import 'package:material_component/bottom_appbar_screen.dart';
 import 'package:material_component/bottom_nvaigation_screen.dart';
 import 'package:material_component/bottom_sheet_screen.dart';
@@ -370,9 +371,9 @@ class MaterialComponentMainScreen extends StatelessWidget {
                     title: "Badge",
                     icon: FontAwesomeIcons.certificate,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const BadgeScreen())
+                      );
                     },
                   ),
                 ],
