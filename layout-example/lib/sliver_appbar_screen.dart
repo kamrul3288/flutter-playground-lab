@@ -62,15 +62,21 @@ class SliverAppbarScreen extends StatelessWidget {
             delegate: SliverChildBuilderDelegate(
                   (context,index){
                     return ListTile(
-                      title: Text("Dhaka <=> Dubai",style: AppTypography.typography.titleMedium?.copyWith(fontWeight: FontWeight.bold),),
-                      leading: CircleAvatar(
-                        backgroundColor: Theme.of(context).colorScheme.primary,
-                      ),
-                      subtitle:  Text(
-                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.typography.bodyMedium?.copyWith(fontWeight: FontWeight.w400),
+                     title: ClipRRect(
+                       borderRadius: BorderRadius.circular(10),
+                       child: Image.network(
+                         "https://mediaim.expedia.com/destination/1/ababbd52d238b29e1b8e792873eb4fe2.jpg",
+                         fit: BoxFit.fill,
+                       ),
+                     ),
+                      subtitle:  Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8.0),
+                        child: Text(
+                            "Dubai: Marina Yacht Cruise with Breakfast, Lunch, or Dinner",
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.typography.bodyMedium?.copyWith(fontWeight: FontWeight.w400),
+                        ),
                       ),
                     );
                   },
