@@ -1,4 +1,5 @@
 import 'package:common/theme/app_colors.dart';
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 class RowScreen extends StatelessWidget {
@@ -6,11 +7,10 @@ class RowScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Row"),
-        centerTitle: true,
-      ),
+    return ScaffoldInfoActionAppBar(
+      title: "Row",
+      widgetDescription: "A widget that displays its children in a horizontal array",
+     
 
       body: Padding(
         padding: const EdgeInsets.all(16.0),
