@@ -1,4 +1,5 @@
 import 'package:common/theme/app_colors.dart';
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 
@@ -7,13 +8,9 @@ class ConstrainedBoxScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-
-      appBar: AppBar(
-        title: const Text("ConstrainedBox"),
-        centerTitle: true,
-      ),
-      backgroundColor: colors(context).white,
+    return  ScaffoldInfoActionAppBar(
+      title: "ConstrainedBox",
+      widgetDescription: "ConstrainedBox is a built-in widget in flutter SDK. Its function is to add size constraints to its child widgets.",
 
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
