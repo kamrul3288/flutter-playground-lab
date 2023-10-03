@@ -1,5 +1,5 @@
-import 'package:common/theme/app_colors.dart';
 import 'package:common/theme/app_typography.dart';
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 class AlignScreen extends StatelessWidget {
@@ -8,53 +8,51 @@ class AlignScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Align Widget"),
-        centerTitle: true,
-      ),
-      backgroundColor: colors(context).white,
+    return ScaffoldInfoActionAppBar(
+      title: "Align",
+      widgetDescription: "The alignment property describes a point in the child 's coordinate system and a different point in the coordinate system of this widget.",
 
 
       //We can also use container
-      body: SafeArea(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Stack(
           children: [
 
             Align(
               alignment: Alignment.topLeft,
-              child: Text("Top Left Alignment",style: AppTypography.typography.titleMedium,),
+              child: Text("Top Left Alignment",style: AppTypography.typography.titleSmall,),
             ),
 
 
             Align(
               alignment: Alignment.topRight,
-              child: Text("Top Right Alignment",style: AppTypography.typography.titleMedium,),
+              child: Text("Top Right Alignment",style: AppTypography.typography.titleSmall,),
             ),
 
 
             Align(
               alignment: Alignment.center,
-              child: Text("Center Alignment",style: AppTypography.typography.titleMedium,),
+              child: Text("Center Alignment",style: AppTypography.typography.titleSmall,),
             ),
 
 
             Align(
               alignment: Alignment.bottomLeft,
-              child: Text("Bottom Left Alignment",style: AppTypography.typography.titleMedium,),
+              child: Text("Bottom Left Alignment",style: AppTypography.typography.titleSmall,),
             ),
 
 
             Align(
               alignment: Alignment.bottomRight,
-              child: Text("Bottom Right Alignment",style: AppTypography.typography.titleMedium,),
+              child: Text("Bottom Right Alignment",style: AppTypography.typography.titleSmall,),
             ),
 
 
             //0.5 of  x axis that's means x axis in center and 0.8 is y axis that means 80%
             Align(
               alignment: const Alignment(0.5, 0.8),
-              child: Text("Custom Alignment",style: AppTypography.typography.titleMedium,),
+              child: Text("Custom Alignment",style: AppTypography.typography.titleSmall,),
             ),
 
           ],
