@@ -1,5 +1,6 @@
 
 import 'package:common/theme/app_colors.dart';
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 
@@ -8,13 +9,10 @@ class ExpandScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
 
-      appBar: AppBar(
-        title: const Text("Expand Widget"),
-        centerTitle: true,
-      ),
-      backgroundColor: colors(context).white,
+    return ScaffoldInfoActionAppBar(
+      title: "Expanded",
+
 
       body: Column(
         children: [
@@ -85,8 +83,6 @@ class ExpandScreen extends StatelessWidget {
 
         ],
       ),
-
-
     );
   }
 }
