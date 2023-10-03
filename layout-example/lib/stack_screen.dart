@@ -1,3 +1,4 @@
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -6,11 +7,9 @@ class StackScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Stacks"),
-        centerTitle: true,
-      ),
+    return ScaffoldInfoActionAppBar(
+      title: "Stack",
+      widgetDescription: "The stack is a widget in Flutter that contains a list of widgets and positions them on top of the other. In other words, the stack allows developers to overlap multiple widgets into a single screen and renders them from bottom to top.",
 
 
       body:   SafeArea(
