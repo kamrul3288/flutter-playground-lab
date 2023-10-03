@@ -1,5 +1,5 @@
 import 'package:common/theme/app_colors.dart';
-import 'package:common/theme/app_typography.dart';
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 class CenterScreen extends StatelessWidget {
@@ -7,16 +7,15 @@ class CenterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Center Widget"),
-        centerTitle: true,
-      ),
-      backgroundColor: colors(context).white,
-      
-      
+    return ScaffoldInfoActionAppBar(
+      title: "Center",
+
       body:  Center(
-        child: Text("Center Text",style: AppTypography.typography.displaySmall),
+        child:  Container(
+          width: 100,
+          height: 100,
+          color: purple40,
+        ),
       ),
       
     );
