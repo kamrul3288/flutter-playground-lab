@@ -1,3 +1,4 @@
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 class ColumnScreen extends StatelessWidget {
@@ -5,12 +6,9 @@ class ColumnScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Column"),
-        centerTitle: true,
-      ),
-
+    return ScaffoldInfoActionAppBar(
+      title: "Column",
+      widgetDescription: "A widget that displays its children in a vertical array",
 
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
