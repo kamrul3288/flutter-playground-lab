@@ -1,4 +1,5 @@
 import 'package:common/theme/app_colors.dart';
+import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 
@@ -7,12 +8,10 @@ class ContainerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Container"),
-        centerTitle: true,
-      ),
-      backgroundColor: colors(context).white,
+    return ScaffoldInfoActionAppBar(
+      title: "Container",
+      widgetDescription: "A Flutter container is a widget/class used to apply styling effects to a widget. It serves as a container that can house a widget in it.",
+
       
       body: Padding(
         padding: const EdgeInsets.all(16.0),

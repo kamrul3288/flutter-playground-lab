@@ -10,7 +10,7 @@ class RowScreen extends StatelessWidget {
     return ScaffoldInfoActionAppBar(
       title: "Row",
       widgetDescription: "A widget that displays its children in a horizontal array",
-     
+
 
       body: Padding(
         padding: const EdgeInsets.all(16.0),
