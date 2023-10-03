@@ -1,3 +1,4 @@
+import 'package:common/theme/app_typography.dart';
 import 'package:common/widget/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -11,18 +12,25 @@ class ListViewScreen extends StatelessWidget {
       title: "ListView",
       widgetDescription: "A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. ",
       body: ListView.builder(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
         itemCount: 30,
         itemBuilder: (context,index){
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("List Item $index"),
+          return ListTile(
+            title: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.network(
+                "https://mediaim.expedia.com/destination/1/ababbd52d238b29e1b8e792873eb4fe2.jpg",
+                fit: BoxFit.fill,
               ),
-              const Divider()
-            ],
+            ),
+            subtitle:  Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8.0),
+              child: Text(
+                "Dubai: Marina Yacht Cruise with Breakfast, Lunch, or Dinner",
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.typography.bodyMedium?.copyWith(fontWeight: FontWeight.w400),
+              ),
+            ),
           );
         },
       ),
