@@ -31,7 +31,9 @@ class ComponentButton extends StatelessWidget {
               children: [
                 FaIcon(icon),
                 const SizedBox(height: 8),
-                Text(title, style: AppTypography.typography.labelLarge?.copyWith(fontWeight: FontWeight.bold),)
+                FittedBox(
+                    child: Text(title, style: AppTypography.typography.labelLarge?.copyWith(fontWeight: FontWeight.bold),)
+                )
               ],
             ),
           ),
