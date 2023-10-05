@@ -7,6 +7,7 @@ import 'package:layout_example/imitedbox_screen.dart';
 import 'package:layout_example/fittedbox_screen.dart';
 import 'package:layout_example/intrinsic_heigh_screen.dart';
 import 'package:layout_example/intrinsic_width_screen.dart';
+import 'package:layout_example/layout_builder_screen.dart';
 import 'package:layout_example/overflowbox_screen.dart';
 import 'package:layout_example/sizebox_screen.dart';
 import 'package:layout_example/flow_screen.dart';
@@ -388,7 +389,7 @@ class LayoutMainScreen extends StatelessWidget {
                     icon: FontAwesomeIcons.igloo,
                     onTap: (){
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=> const ListViewScreen())
+                          MaterialPageRoute(builder: (context)=> const LayoutBuilderScreen())
                       );
                     },
                   ),
