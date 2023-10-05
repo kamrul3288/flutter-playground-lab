@@ -5,6 +5,7 @@ import 'package:layout_example/baseline_screen.dart';
 import 'package:layout_example/fractionally_sizebox_screen.dart';
 import 'package:layout_example/imitedbox_screen.dart';
 import 'package:layout_example/fittedbox_screen.dart';
+import 'package:layout_example/intrinsic_width_screen.dart';
 import 'package:layout_example/sizebox_screen.dart';
 import 'package:layout_example/flow_screen.dart';
 import 'package:layout_example/grid_screen.dart';
@@ -322,7 +323,7 @@ class LayoutMainScreen extends StatelessWidget {
                       icon: FontAwesomeIcons.textWidth,
                       onTap: (){
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context)=> const WrapScreen())
+                            MaterialPageRoute(builder: (context)=> const IntrinsicWidthScreen())
                         );
                       }
                   ),
