@@ -7,6 +7,7 @@ import 'package:layout_example/imitedbox_screen.dart';
 import 'package:layout_example/fittedbox_screen.dart';
 import 'package:layout_example/intrinsic_heigh_screen.dart';
 import 'package:layout_example/intrinsic_width_screen.dart';
+import 'package:layout_example/overflowbox_screen.dart';
 import 'package:layout_example/sizebox_screen.dart';
 import 'package:layout_example/flow_screen.dart';
 import 'package:layout_example/grid_screen.dart';
@@ -331,11 +332,11 @@ class LayoutMainScreen extends StatelessWidget {
 
                   ComponentButton(
                     flex: 100,
-                    title: "Overflow",
+                    title: "OverflowBox",
                     icon: FontAwesomeIcons.barsStaggered,
                     onTap: (){
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=> const IntrinsicHeightScreen())
+                          MaterialPageRoute(builder: (context)=> const OverflowBoxScreen())
                       );
                     },
                   ),
