@@ -12,6 +12,7 @@ import 'package:layout_example/sizebox_screen.dart';
 import 'package:layout_example/flow_screen.dart';
 import 'package:layout_example/grid_screen.dart';
 import 'package:layout_example/indexed_stack_screen.dart';
+import 'package:layout_example/sized_overflowbox_screen.dart';
 import 'package:layout_example/wrap_screen.dart';
 import 'package:layout_example/sliver_appbar_screen.dart';
 import 'package:layout_example/column_screen.dart';
@@ -347,7 +348,7 @@ class LayoutMainScreen extends StatelessWidget {
                     icon: FontAwesomeIcons.florinSign,
                     onTap: (){
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=> const ListViewScreen())
+                          MaterialPageRoute(builder: (context)=> const SizedOverflowBoxScreen())
                       );
                     },
                   ),
