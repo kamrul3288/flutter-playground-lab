@@ -2,6 +2,7 @@ import 'package:common/widget/component_button.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:layout_example/baseline_screen.dart';
+import 'package:layout_example/data_table_screen.dart';
 import 'package:layout_example/fractionally_sizebox_screen.dart';
 import 'package:layout_example/imitedbox_screen.dart';
 import 'package:layout_example/fittedbox_screen.dart';
@@ -406,7 +407,7 @@ class LayoutMainScreen extends StatelessWidget {
                       icon: FontAwesomeIcons.table,
                       onTap: (){
                         Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context)=> const WrapScreen())
+                            MaterialPageRoute(builder: (context)=> const DataTableScreen())
                         );
                       }
                   ),
