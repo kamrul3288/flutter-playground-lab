@@ -1,6 +1,7 @@
 import 'package:common/widget/component_button.dart';
 import 'package:common/widget/scaffold_appbar.dart';
 import 'package:cupertino_component/action_sheet_cupertino.dart';
+import 'package:cupertino_component/indicator_cupertino.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -34,9 +35,9 @@ class MainCupertinoScreen extends StatelessWidget {
                     title: "Indicator",
                     icon: FontAwesomeIcons.spinner,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const ColumnScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const IndicatorCupertinoScreen())
+                      );
                     },
                   ),
 
