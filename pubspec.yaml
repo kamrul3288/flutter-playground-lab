@@ -20,6 +20,8 @@ dependencies:
     path: layout-example
   material_component:
     path: material-component
+  cupertino_component:
+    path: cupertino-component
 
 dev_dependencies:
   flutter_test:

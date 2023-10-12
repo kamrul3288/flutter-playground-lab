@@ -24,7 +24,7 @@ class ScaffoldInfoActionAppBar extends StatelessWidget {
         title: Text(title),
         centerTitle: true,
 
-        actions: [
+        actions: widgetDescription == null ? null :  [
           IconButton(
               onPressed: (){
                 context.positiveButtonDialog(

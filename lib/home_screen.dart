@@ -1,4 +1,5 @@
 import 'package:common/widget/component_button.dart';
+import 'package:cupertino_component/main_cupertino_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:layout_example/layout_main_screen.dart';
@@ -51,10 +52,12 @@ class HomeScreen extends StatelessWidget {
               children: [
                 ComponentButton(
                     flex: 100,
-                    title: "Animations",
-                    icon: FontAwesomeIcons.table,
+                    title: "Cupertino Component",
+                    icon: FontAwesomeIcons.appStoreIos,
                     onTap: (){
-
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const MainCupertinoScreen())
+                      );
                     }
                 ),
                 ComponentButton(

@@ -56,6 +56,13 @@ packages:
       relative: true
     source: path
     version: "1.0.0+1"
+  cupertino_component:
+    dependency: "direct main"
+    description:
+      path: cupertino-component
+      relative: true
+    source: path
+    version: "1.0.0+1"
   cupertino_icons:
     dependency: transitive
     description:
