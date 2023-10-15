@@ -1,6 +1,7 @@
 import 'package:common/widget/component_button.dart';
 import 'package:common/widget/scaffold_appbar.dart';
 import 'package:cupertino_component/action_sheet_cupertino.dart';
+import 'package:cupertino_component/button_cupertino.dart';
 import 'package:cupertino_component/dialog_cupertino.dart';
 import 'package:cupertino_component/indicator_cupertino.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
@@ -64,9 +65,9 @@ class MainCupertinoScreen extends StatelessWidget {
                       title: "Button",
                       icon: FontAwesomeIcons.eject,
                       onTap: (){
-                        // Navigator.of(context).push(
-                        //     MaterialPageRoute(builder: (context)=> const StackScreen())
-                        // );
+                        Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context)=> const ButtonCupertinoScreen())
+                        );
                       }
                   ),
                   ComponentButton(
