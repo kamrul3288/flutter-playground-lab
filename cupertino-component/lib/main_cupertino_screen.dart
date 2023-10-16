@@ -2,6 +2,7 @@ import 'package:common/widget/component_button.dart';
 import 'package:common/widget/scaffold_appbar.dart';
 import 'package:cupertino_component/action_sheet_cupertino.dart';
 import 'package:cupertino_component/button_cupertino.dart';
+import 'package:cupertino_component/date_time_picker_cupertino.dart';
 import 'package:cupertino_component/dialog_cupertino.dart';
 import 'package:cupertino_component/indicator_cupertino.dart';
 import 'package:cupertino_component/menu_cupertino.dart';
@@ -84,12 +85,12 @@ class MainCupertinoScreen extends StatelessWidget {
 
                   ComponentButton(
                     flex: 80,
-                    title: "Date Picker",
+                    title: "Date Time Picker",
                     icon: FontAwesomeIcons.calendar,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const RowScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const DateTimePickerCupertinoScreen())
+                      );
                     },
                   ),
                 ],
