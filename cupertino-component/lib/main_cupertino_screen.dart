@@ -4,6 +4,7 @@ import 'package:cupertino_component/action_sheet_cupertino.dart';
 import 'package:cupertino_component/button_cupertino.dart';
 import 'package:cupertino_component/dialog_cupertino.dart';
 import 'package:cupertino_component/indicator_cupertino.dart';
+import 'package:cupertino_component/menu_cupertino.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -75,9 +76,9 @@ class MainCupertinoScreen extends StatelessWidget {
                     title: "Context Menu",
                     icon: FontAwesomeIcons.ellipsisVertical,
                     onTap: (){
-                      // Navigator.of(context).push(
-                      //     MaterialPageRoute(builder: (context)=> const ColumnScreen())
-                      // );
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const MenuCupertinoScreen())
+                      );
                     },
                   ),
 
