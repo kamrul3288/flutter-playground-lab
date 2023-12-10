@@ -26,8 +26,6 @@ dependencies:
     path: bloc-state-management
   riverpod_state_management:
     path: riverpod-state-management
-  async_programming:
-    path: async-programming
 
 dev_dependencies:
   flutter_test:

@@ -1,4 +1,3 @@
-import 'package:async_programming/asyn_home_screen.dart';
 import 'package:bloc_state_management/bloc_home_screen.dart';
 import 'package:common/widget/component_button.dart';
 import 'package:cupertino_component/main_cupertino_screen.dart';
@@ -96,31 +95,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-
-
-            //-------------Row 4-----------------
-            Row(
-              children: [
-                ComponentButton(
-                    flex: 100,
-                    title: "Async Programming",
-                    icon: FontAwesomeIcons.asymmetrik,
-                    onTap: (){
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=> const AsyncHomeScreen())
-                      );
-                    }
-                ),
-                ComponentButton(
-                  flex: 100,
-                  title: "Riverpod StateManagement",
-                  icon: FontAwesomeIcons.squarespace,
-                  onTap: (){
-
-                  },
-                ),
-              ],
-            )
           ],
         ),
       ),
