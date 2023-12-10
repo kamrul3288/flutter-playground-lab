@@ -22,6 +22,8 @@ dependencies:
     path: material-component
   cupertino_component:
     path: cupertino-component
+  bloc_state_management:
+    path: bloc-state-management
 
 dev_dependencies:
   flutter_test:

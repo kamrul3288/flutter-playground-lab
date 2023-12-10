@@ -1,3 +1,4 @@
+import 'package:bloc_state_management/bloc_home_screen.dart';
 import 'package:common/widget/component_button.dart';
 import 'package:cupertino_component/main_cupertino_screen.dart';
 import 'package:flutter/material.dart';
@@ -63,6 +64,30 @@ class HomeScreen extends StatelessWidget {
                 ComponentButton(
                   flex: 100,
                   title: "Navigation",
+                  icon: FontAwesomeIcons.squarespace,
+                  onTap: (){
+
+                  },
+                ),
+              ],
+            ),
+
+            //-------------Row 2-----------------
+            Row(
+              children: [
+                ComponentButton(
+                    flex: 100,
+                    title: "Bloc StateManagment",
+                    icon: FontAwesomeIcons.manatSign,
+                    onTap: (){
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context)=> const BlocHomeScreen())
+                      );
+                    }
+                ),
+                ComponentButton(
+                  flex: 100,
+                  title: "Riverpod StateManagement",
                   icon: FontAwesomeIcons.squarespace,
                   onTap: (){
 
