@@ -17,6 +17,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  async_programming:
+    dependency: "direct main"
+    description:
+      path: async-programming
+      relative: true
+    source: path
+    version: "1.0.0+1"
   bloc_state_management:
     dependency: "direct main"
     description:
@@ -221,6 +228,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
+  riverpod_state_management:
+    dependency: "direct main"
+    description:
+      path: riverpod-state-management
+      relative: true
+    source: path
+    version: "1.0.0+1"
   sky_engine:
     dependency: transitive
     description: flutter
