@@ -49,13 +49,15 @@ class ScaffoldActionAppBar extends StatelessWidget {
   final Color? backgroundColor;
   final String title;
   final List<Widget>? actions;
+  final Widget? floatingActionButton;
 
   const ScaffoldActionAppBar({
     super.key,
     this.body,
     this.backgroundColor,
     required this.title,
-    this.actions
+    this.actions,
+    this.floatingActionButton
   });
 
   @override
@@ -69,6 +71,8 @@ class ScaffoldActionAppBar extends StatelessWidget {
       backgroundColor: backgroundColor,
 
       body: body,
+
+      floatingActionButton: floatingActionButton,
     );
   }
 }

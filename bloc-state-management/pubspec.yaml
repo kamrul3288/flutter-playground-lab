@@ -10,8 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   dep_management:
     path: ../dep_management
+
   common:
       path: ../common
 

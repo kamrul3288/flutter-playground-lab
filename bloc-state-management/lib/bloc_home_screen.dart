@@ -1,4 +1,7 @@
+import 'package:bloc_state_management/counter/bloc_counter_screen.dart';
+import 'package:bloc_state_management/counter/counter_cubit.dart';
 import 'package:common/common.dart';
+import 'package:dep_management/flutter_bloc.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -23,9 +26,14 @@ class BlocHomeScreen extends StatelessWidget {
                     title: "Counter",
                     icon: FontAwesomeIcons.plus,
                     onTap: (){
-                     /* Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=> const MaterialComponentMainScreen())
-                      );*/
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context){
+                            return BlocProvider(
+                              create: (_)=>CounterCubit(),
+                              child: const BlocCounterScreen(),
+                            );
+                          })
+                      );
                     }
                 ),
                 ComponentButton(

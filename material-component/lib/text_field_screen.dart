@@ -20,6 +20,7 @@ class _TextFiledScreenState extends State<TextFiledScreen> {
   final textFiledController2 = TextEditingController();
   final textFiledController3 = TextEditingController();
   final textFiledController4 = TextEditingController();
+  final textFiledController5 = TextEditingController();
 
 
   void _changePasswordVisibility(bool status){
@@ -134,6 +135,26 @@ class _TextFiledScreenState extends State<TextFiledScreen> {
                 ),
                 cursorColor: white,
                 style: AppTypography.typography.bodyLarge?.copyWith(color: white),
+              ),
+
+
+              const Height(height: 16),
+              TextFormField(
+                controller: textFiledController5,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  labelStyle: const TextStyle(color: white),
+                  filled: true,
+                  fillColor: Theme.of(context).colorScheme.primary,
+                  border: UnderlineInputBorder(
+                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  prefixIcon: Icon(Icons.lock_outline_rounded, color: white,),
+                ),
+                cursorColor: white,
+                style: AppTypography.typography.bodyLarge?.copyWith(color: white),
+
               ),
 
 
