@@ -1,5 +1,8 @@
 import 'package:bloc_state_management/counter/bloc_counter_screen.dart';
 import 'package:bloc_state_management/counter/counter_cubit.dart';
+import 'package:bloc_state_management/infinitylist/bloc/post_bloc.dart';
+import 'package:bloc_state_management/infinitylist/bloc/post_event.dart';
+import 'package:bloc_state_management/infinitylist/bloc_infinity_list_screen.dart';
 import 'package:bloc_state_management/timer/bloc_ticker.dart';
 import 'package:bloc_state_management/timer/bloc_timer_screen.dart';
 import 'package:bloc_state_management/timer/timer_bloc.dart';
@@ -7,6 +10,7 @@ import 'package:common/common.dart';
 import 'package:dep_management/flutter_bloc.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class BlocHomeScreen extends StatelessWidget {
   const BlocHomeScreen({super.key});
@@ -43,6 +47,43 @@ class BlocHomeScreen extends StatelessWidget {
                   flex: 100,
                   title: "Timer",
                   icon: FontAwesomeIcons.clock,
+                  onTap: (){
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context){
+                          return BlocProvider(
+                            create: (_)=>TimerBloc(BlocTicker()),
+                            child: const BlocTimerScreen(),
+                          );
+                        })
+                    );
+                  },
+                ),
+              ],
+            ),
+
+
+            //-------------Row 2-----------------
+            Row(
+              children: [
+                ComponentButton(
+                    flex: 100,
+                    title: "Infinity List",
+                    icon: FontAwesomeIcons.infinity,
+                    onTap: (){
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context){
+                            return BlocProvider(
+                              create: (_)=>PostBloc(httpClient: http.Client())..add(PostFetched()),
+                              child: const BlocInfinityListScreen(),
+                            );
+                          })
+                      );
+                    }
+                ),
+                ComponentButton(
+                  flex: 100,
+                  title: "Login",
+                  icon: FontAwesomeIcons.wpforms,
                   onTap: (){
                     Navigator.of(context).push(
                         MaterialPageRoute(builder: (context){
