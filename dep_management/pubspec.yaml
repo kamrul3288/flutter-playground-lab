@@ -19,6 +19,7 @@ dependencies:
   jiffy: ^6.2.1
   flutter_svg: ^2.0.9
   flutter_bloc: ^8.1.2
+  equatable: ^2.0.5
 
 
 dev_dependencies:

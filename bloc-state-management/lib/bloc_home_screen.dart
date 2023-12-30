@@ -1,5 +1,8 @@
 import 'package:bloc_state_management/counter/bloc_counter_screen.dart';
 import 'package:bloc_state_management/counter/counter_cubit.dart';
+import 'package:bloc_state_management/timer/bloc_ticker.dart';
+import 'package:bloc_state_management/timer/bloc_timer_screen.dart';
+import 'package:bloc_state_management/timer/timer_bloc.dart';
 import 'package:common/common.dart';
 import 'package:dep_management/flutter_bloc.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
@@ -41,7 +44,14 @@ class BlocHomeScreen extends StatelessWidget {
                   title: "Timer",
                   icon: FontAwesomeIcons.clock,
                   onTap: (){
-
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context){
+                          return BlocProvider(
+                            create: (_)=>TimerBloc(BlocTicker()),
+                            child: const BlocTimerScreen(),
+                          );
+                        })
+                    );
                   },
                 ),
               ],
