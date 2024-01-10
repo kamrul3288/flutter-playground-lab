@@ -1,4 +1,7 @@
 
+import 'package:bloc_state_management/countdowntimer/count_down_bloc.dart';
+import 'package:bloc_state_management/countdowntimer/count_down_timer_repo.dart';
+import 'package:bloc_state_management/countdowntimer/count_down_timer_screen.dart';
 import 'package:bloc_state_management/counter/counter_cubit.dart';
 import 'package:bloc_state_management/counter/counter_screen.dart';
 import 'package:common/common.dart';
@@ -45,7 +48,17 @@ class _BlocHomeScreenState extends State<BlocHomeScreen> {
                   flex: 100,
                   title: "CountDown Timer",
                   icon: FontAwesomeIcons.clock,
-                  onTap: (){},
+                  onTap: ()=> Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context)=> RepositoryProvider(
+                        create: (context) => CountDownTimerRepository(),
+                        child: BlocProvider(
+                          create: (context) => CountDownBloc(countDownTimerRepository: context.read<CountDownTimerRepository>()),
+                          child: CountDownTimerScreen(),
+                        ),
+                      )
+                    )
+                  ),
                 ),
               ],
             ),
