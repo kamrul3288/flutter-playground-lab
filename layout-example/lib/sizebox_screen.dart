@@ -1,7 +1,7 @@
 
-import 'package:common/theme/app_colors.dart';
-import 'package:common/theme/app_typography.dart';
-import 'package:common/widget/scaffold_appbar.dart';
+import 'package:design_system/theme/app_colors.dart';
+import 'package:design_system/theme/app_typography.dart';
+import 'package:design_system/component/scaffold_appbar.dart';
 import 'package:flutter/material.dart';
 
 class SizeBoxWidgetScreen extends StatelessWidget {

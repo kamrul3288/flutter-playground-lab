@@ -1,6 +1,4 @@
-
-import 'package:common/widget/component_button.dart';
-import 'package:common/widget/scaffold_appbar.dart';
+import 'package:design_system/component/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:material_component/DividerScreen.dart';
@@ -30,6 +28,7 @@ import 'package:material_component/text_screen.dart';
 import 'package:material_component/time_picker_screen.dart';
 import 'package:material_component/tool_tips_screen.dart';
 import 'package:material_component/top_appbar_screen.dart';
+import 'package:ui/widget/component_button.dart';
 
 class MaterialComponentMainScreen extends StatelessWidget {
   const MaterialComponentMainScreen({super.key});

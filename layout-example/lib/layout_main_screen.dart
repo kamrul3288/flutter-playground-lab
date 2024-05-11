@@ -1,4 +1,3 @@
-import 'package:common/widget/component_button.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:layout_example/baseline_screen.dart';
@@ -28,6 +27,7 @@ import 'package:layout_example/align_screen.dart';
 import 'package:layout_example/center_screen.dart';
 import 'package:layout_example/expand_screen.dart';
 import 'package:layout_example/list_view_screen.dart';
+import 'package:ui/widget/component_button.dart';
 
 class LayoutMainScreen extends StatelessWidget {
   const LayoutMainScreen({super.key});

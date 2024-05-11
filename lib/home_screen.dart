@@ -1,10 +1,9 @@
-import 'package:bloc_state_management/bloc_home_screen.dart';
-import 'package:common/widget/component_button.dart';
 import 'package:cupertino_component/main_cupertino_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:layout_example/layout_main_screen.dart';
 import 'package:material_component/material_component_main.dart';
+import 'package:ui/widget/component_button.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -47,7 +46,6 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
 
-
             //-------------Row 2-----------------
             Row(
               children: [
@@ -79,11 +77,7 @@ class HomeScreen extends StatelessWidget {
                     flex: 100,
                     title: "Bloc StateManagement",
                     icon: FontAwesomeIcons.manatSign,
-                    onTap: (){
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context)=> const BlocHomeScreen())
-                      );
-                    }
+                    onTap: (){}
                 ),
                 ComponentButton(
                   flex: 100,

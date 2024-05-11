@@ -5,7 +5,7 @@ publish_to: 'none'
 
 version: 1.0.0+1
 environment:
-  sdk: '>=3.2.3 <4.0.0'
+  sdk: '>=3.3.1 <4.0.0'
 
 
 dependencies:
@@ -14,6 +14,16 @@ dependencies:
 
   dep_management:
     path: dep_management
+  design_system:
+    path: core/design-system
+  ui:
+    path: core/ui
+  data:
+    path: core/data
+  domain:
+    path: core/domain
+  model:
+    path: core/model
   common:
     path: common
   layout_example:
@@ -24,17 +34,7 @@ dependencies:
     path: cupertino-component
   bloc_state_management:
     path: bloc-state-management
-  riverpod_state_management:
-    path: riverpod-state-management
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.1
-
-
-dependency_overrides:
-    meta: ^1.11.0
 
 flutter:
   uses-material-design: true

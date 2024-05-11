@@ -1,4 +1,5 @@
-import 'package:common/common.dart';
+import 'package:design_system/component/component_size_widgets.dart';
+import 'package:design_system/component/scaffold_appbar.dart';
 import 'package:flutter/cupertino.dart';
 
 class ButtonCupertinoScreen extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:common/widget/scaffold_appbar.dart';
+import 'package:design_system/component/scaffold_appbar.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 

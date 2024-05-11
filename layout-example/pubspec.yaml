@@ -4,7 +4,7 @@ publish_to: 'none'
 
 version: 1.0.0+1
 environment:
-    sdk: '>=3.2.3 <4.0.0'
+    sdk: '>=3.3.1 <4.0.0'
 
 
 dependencies:
@@ -12,16 +12,13 @@ dependencies:
     sdk: flutter
   dep_management:
     path: ../dep_management
-
   common:
     path: ../common
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  design_system:
+    path: ../core/design-system
+  ui:
+    path: ../core/ui
 
 flutter:
   uses-material-design: true
 
-dependency_overrides:
-  meta: ^1.11.0

@@ -1,7 +1,7 @@
-import 'package:common/theme/app_typography.dart';
-import 'package:common/widget/component_button.dart';
+import 'package:design_system/theme/app_typography.dart';
 import 'package:dep_management/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:ui/widget/component_button.dart';
 
 class SliverAppbarScreen extends StatelessWidget {
   const SliverAppbarScreen({super.key});

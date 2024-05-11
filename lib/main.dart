@@ -1,11 +1,8 @@
-import 'package:bloc_state_management/bloc_observer.dart';
-import 'package:common/theme/app_theme.dart';
-import 'package:dep_management/bloc.dart';
+import 'package:design_system/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 
 void main() {
-  Bloc.observer = MainBlocObserver();
   runApp(const MyApp());
 }
 

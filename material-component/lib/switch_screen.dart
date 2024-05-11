@@ -1,6 +1,6 @@
-import 'package:common/theme/app_typography.dart';
-import 'package:common/widget/component_size_widgets.dart';
-import 'package:common/widget/scaffold_appbar.dart';
+import 'package:design_system/theme/app_typography.dart';
+import 'package:design_system/component/component_size_widgets.dart';
+import 'package:design_system/component/scaffold_appbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
